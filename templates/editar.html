@@ -17,6 +17,7 @@
             align-items: center;
             justify-content: center;
             height: auto;
+            text-align: center;
         }
         form{
             display: flex;
@@ -95,7 +96,7 @@
         }
         </style>
     
-    <h1>Editar Modelo</h1>
+    <h1>Editar Dados</h1>
 
     <form action="{{ url_for('editar', id=modelo.id) }}" method="POST" enctype="multipart/form-data">
         <div class="form-group">

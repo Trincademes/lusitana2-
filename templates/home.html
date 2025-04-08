@@ -19,6 +19,7 @@
             height: auto;
             width: auto;
             margin: 5px;
+            text-align: center;
         }
         form{
             display: flex;
@@ -95,10 +96,13 @@
         transform: scale(1.05);
         color: #fff;
     }
-    </style>
+    .table{
+        align-items: center;
+    }
+        </style>
     <img src="../static/images/images-removebg-preview.png" alt="Descrição da imagem">
     <h1>Bem-vindo, {{ username }}!</h1>
-    <h2>Modelos Cadastrados</h2>
+    <h2>Dados Cadastrados</h2>
     <table border="1">
         <thead>
             <tr>
@@ -152,7 +156,7 @@
         </tbody>
     </table>
     <br>
-    <a class="btn-personalizado-2" href="{{ url_for('adicionar') }}">Adicionar Novo Modelo</a>
+    <a class="btn-personalizado-2" href="{{ url_for('adicionar') }}">Adicionar Novod Dados</a>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
